@@ -1,0 +1,2 @@
+function f=funcion(x)
+  f=@(x) x^2;
