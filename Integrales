@@ -1,0 +1,22 @@
+% Integrales
+% Título: Integral
+% Descripción: Script para saber cualquier integral.
+% Autor: Diana Guadalupe González Alfaro (DianaGA1805) diangoal95@gmail.com 
+% Fecha: 20210520
+% Sesion: 1
+% Notas: Requiere aplicacion octave... usar en consola preferiblemente
+
+%Limpiamos_variables
+clear
+%Limpiamos_Pantalla
+clc
+
+%Declaramos_el_simbolo_llamado_x
+syms x;
+
+%Pedimos_la_funcion_para_integrar
+f=input('Digite la función a integrar: ');
+%Evaluamos_el_valor_que_sera_de_tipo_char
+F=inline(char(f));
+%Reconoce_la_integral_como_"int"_y_le_colocamos_los_valores_que_ya_pedimos_para_que_se_haga_la_integral
+F=int(f)
